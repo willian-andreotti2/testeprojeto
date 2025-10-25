@@ -6,36 +6,34 @@
 
 .cabecalho {
   position: fixed;
-  text-align: center;
+
   top: 0px;
   left: 0px;
   right: 0px;
   z-index: 3;
-  height: 120px;
-  width: 100%;
 
-  max-width: 2200px;
+  width: 100vw;
+  height: 120px;
+
   background-color: #8c52ff;
 }
 
 .logo {
   display: flex;
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 7rem;
-  max-width: 20rem;
+  justify-content: center;
+  right: 250px;
   top: -3rem;
-
-  z-index: 99;
+  z-index: 0;
 }
 
 .titulo {
   display: flex;
   position: relative;
-  text-align: center;
-  width: 100%;
-  max-width: 2000px;
-  top: 30px;
+  width: 100vw;
+  top: 20px;
   left: 0rem;
   justify-content: center;
   font-weight: bold;
@@ -46,13 +44,12 @@
 .selecao {
   display: flex;
   position: relative;
-  text-align: center;
+  justify-content: center;
   bottom: 4rem;
-  width: 100%;
-  max-width: 160px;
+  width: 100vw;
+
   margin: 0 auto;
   gap: 0px 30px;
-  margin-right: 64rem;
 }
 ul li {
   cursor: pointer;
@@ -437,90 +434,117 @@ body {
 }
 
 .enunciado {
-  position: absolute;
   color: #02dffc;
-  width: 400px;
-  height: 120px;
-  margin-left: 870px;
-  margin-top: 230px;
-  font-size: 20px;
+
+  width: 70%;
+  max-width: 300px;
+
+  margin: 120px auto;
+  text-align: center;
+  font-size: 1.25rem;
 }
 
 .cadastro-informacoes-pessoais {
   display: flex;
-  position: relative;
-  width: 600px;
-  height: 400px;
-
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
   border: 2px solid #02dffc;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(50px);
   border-radius: 15px;
-  padding: 70px 100px;
+  padding: 40px 90px;
   border: 2px solid #fad400;
-  left: 700px;
-  top: 300px;
 }
 
 .cadastro-informacoes-pessoais input {
+  width: 100%;
+  max-width: 300px;
   border-radius: 10px;
-  padding: 5px 9px;
+  padding: 8px 10px;
   color: #8c52ff;
+  margin-bottom: 15px;
+  border: 1px solid #02dffc;
 }
 
 .cadastro-informacoes-pessoais input::placeholder {
   color: #8c52ff;
 }
 
-option {
-  color: #8c52ff;
-}
-
 .cadastro-informacoes-pessoais legend {
-  display: flex;
-  position: absolute;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+
   color: #02dffc;
-
-  font-size: 18px;
-
-  text-transform: uppercase;
-  top: 5%;
-  left: 30%;
 }
 
 .cadastro-informacoes-pessoais label {
-  display: flex;
-  position: relative;
-  width: 200px;
-  height: 20px;
-  padding: -10px -9px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+
   color: aqua;
 }
 
 .button-enviar {
   display: flex;
-  position: absolute;
-  height: 40px;
-  bottom: 30px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .button-enviar button {
-  width: 60px;
+  width: 100px;
+  height: 40px;
   background-color: #02dffc;
   border-radius: 10px;
   color: #8c52ff;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   cursor: pointer;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .enunciado {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .cadastro-informacoes-pessoais {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .cadastro-informacoes-pessoais input {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .enunciado {
+    font-size: 0.9rem;
+  }
+
+  .cadastro-informacoes-pessoais {
+    padding: 20px 10px;
+  }
+
+  .button-enviar button {
+    width: 80px;
+    font-size: 0.9rem;
+  }
 }
 
 footer {
-  position: relative;
-  align-items: center;
-  max-width: 1000px;
-  text-align: center;
   color: #02dffc;
-  font-size: 14px;
-  margin-top: 400px;
-  margin-left: 300px;
-  bottom: 60px;
-  left: 40%;
+}
+
+footer p {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  top: 400px;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 10px;
 }

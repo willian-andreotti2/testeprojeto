@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espaçamento entre Parágrafos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        padding: 30px;
+      }
+
+      p {
+        position: relative;
+        font-size: 18px;
+        line-height: 1.6; /* espaço entre linhas */
+        margin-bottom: 10px; /* espaço entre parágrafos */
+        margin-top: 0; /* remove espaço acima de cada parágrafo */
+      }
+
+      /* se quiser um destaque pro primeiro parágrafo */
+      p:first-of-type {
+        color: #2c3e50;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Este é o primeiro parágrafo. Ele está colado ao topo, mas tem espaço
+      abaixo.
+    </p>
+    <p>Este é o segundo parágrafo. Veja o espaço entre ele e o anterior.</p>
+    <p>Este é o terceiro parágrafo, igualmente espaçado.</p>
+    <p>E este é o último parágrafo, mantendo o mesmo padrão de distância.</p>
+  </body>
+</html>
