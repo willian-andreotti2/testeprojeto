@@ -585,7 +585,7 @@ body {
   .imagens {
     grid-template-columns: 1fr;
 
-    margin-left: -80px;
+    margin-left: -150px;
   }
 }
 
