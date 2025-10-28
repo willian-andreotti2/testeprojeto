@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const cidade = document.getElementById("cidade").value.trim();
     const estado = document.getElementById("estado").value;
 
-    const cpfPattern = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
-    const telefonePattern = /^\d{2}\.\d{5}\.\d{4}$/;
+    const cpfPattern = /^\d{3}\d{3}\d{3}\d{2}$/;
+    const telefonePattern = /^\d{2}\d{5}\d{4}$/;
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const cepPattern = /^\d{5}-\d{3}$/;
+    const cepPattern = /^\d{5}\d{3}$/;
 
     function showMessage(texto, tipo) {
       msgBox.textContent = texto;
